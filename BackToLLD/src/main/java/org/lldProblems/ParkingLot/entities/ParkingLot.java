@@ -20,6 +20,7 @@ public class ParkingLot {
         if (availableSpot == null){
             System.out.println("ALL SLots are FULL");
         }
+        availableSpot.park(vehicle);  // Occupy the spot
         return new Ticket(UUID.randomUUID(), vehicle, availableSpot);
 
     }
